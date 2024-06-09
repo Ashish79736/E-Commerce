@@ -1,0 +1,97 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 250px; /* Adjust this value as needed */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Product listings */
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product h3 {
+    margin-top: 0;
+}
+
+.product p {
+    margin-bottom: 0;
+}
+
+/* Cart items */
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Account information */
+.account-info {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.account-info h2 {
+    margin-top: 0;
+}

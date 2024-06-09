@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BedSheets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+ .search-bar {
+            width: 50%;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 14000px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            width: 300px;
+            background-color: #fff;
+            margin: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .product p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .product .price {
+            font-weight: bold;
+            font-size: 20px;
+            color: #007bff;
+        }
+        .product .price strike{
+            font-size: 15px;
+            color: red;
+        }
+        .product button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #0056b3;
+        }
+         /* Zoom effect */
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product:hover img {
+            transform: scale(1.05);
+        }
+        .kk img{
+    height:400px;
+}
+  
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <form action="search.php" method="GET">
+            <input type="text" name="query" placeholder="Search for products...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+
+  <!-- carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide kk" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- insert -->
+        <img src="Home & Furniture/Blanket_offer.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <!-- insert -->
+        <img src="Home & Furniture/Blanket_offer1.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+    
+<!--  product container-->
+<div class="container">
+    <div class="product">
+        <img src="Home & Furniture/Blanket1.jpg" alt="Blanket Image">
+        <h2>MYTRIDENT Blanket Single Bed | 2 Ply Ultra Soft Solid Single Blankets for Winter </h2>
+        <p>Lay in the eternal warm comfort of our Classis Solid embossed Mink Blankets and surrender yourself to pure bliss. The plush comfort of these blankets will drift you into timelessness with their extra cozy embrace.</p>
+        <p class="price">₹2,699  <strike>₹3,499</strike> (23% off)
+        </p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Home & Furniture/Blanket2.jpg" alt="Blanket Image">
+        <h2>Cloth Fusion Cotton Reversible Dohar Single Bed Size All Season Blanket Comforter (Floral Blossom, Pack of 1)</h2>
+        <p> Filled with 80 GSM Falalen filling, Fiesta comforters are designed to keep you warm and cosy. Perfect for use during the mild winters and in air-conditioned rooms, these lightweight comforters are perfect for everyday use. Cotton Blend Fabric on Top and Bottom with Falalen sheet in the middle.</p>
+        <p class="price">₹799  <strike>₹1,499</strike> (47% off)</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Home & Furniture/Blanket3.jpg" alt="Blanket Image">
+        <h2>Divine Casa Microfibre 120 GSM Mild Winter Abstract Printed Reversible Single Bed Size Blankets Light Weight Quilt Duvet, (Navy Blue & White, 140 x 230)</h2>
+        <p>Designed for year-round use, this quilted Fur Comforter makes the perfect addition to any bedroom. Toss it over you when you're relaxing on the sofa during chilly fall or spring evenings, or use it as a layering piece under your quilt or bedspread in the summer. 100 % Microfibre material is used.</p>
+        <p class="price">₹839  <strike>₹4,999</strike> (83% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Blanket4.jpg" alt="Blanket Image">
+        <h2>THARUNSHA ELITE Single Size Pure 100% Cotton Blanket</h2>
+        <p>The blankets are processed with high quality cotton fabric that makes sure the colour does not fade and the fabric texture and finish are not lost even after washing. They have a large size yet are lightweight which makes them easy to carry while travelling</p>
+        <p class="price">₹2,098  <strike>₹5,000</strike> (58% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Blanket5.jpg" alt="Blanket Image">
+        <h2>BRANDONN New Born Baby Blankets All Season Fluffy 2 Layered AC Wrapping Sheet Flannel and Sherpa Blanket for Baby Boys and Baby Girls, Toddlers 130 cm x 105 cm, (3-24 Months) (Lightweight)</h2>
+        <p>Double Layered Blanket Keeps Baby's Body Cosy And Warm in AC Rooms in Summers And in Winters Also.</p>
+        <p class="price">₹611  <strike>₹1,599</strike> (62% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Blanket6.jpg" alt="Blanket Image">
+        <h2>VAS COLLECTIONS Woolen Blanket Warm and Super Soft Heavy Weight Single Bed Blankets for Heavy Winter (Grey,152X225 cm,1400 Gram) (Charcoal & Grey), Breathable</h2>
+        <p>These heavyweight woolen blankets are loom woven and have finished edges on all sides to prevent fraying. Ruggedly designed - they are thick, heavy duty, durable and naturally long lasting. This fleece blanket is thicker than cotton.</p>
+        <p class="price">₹471  <strike>₹1,399</strike> (66% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Blanket7.jpg" alt="Blanket Image">
+        <h2>BRANDONN Fleece New Born All Season Ultrasoft Single Baby Blanket for Babies (Beige/Grey, Pack of 2, reversible)</h2>
+        <p>Brandonn Brings The Ultra Soft Range Of Baby Blankets With Amazing Safety Features For Babies. Hood With Blanket Keeps Baby Safe Inside The Blanket. This Blanket Can Be Used For 0-6 Months Old Babies.</p>
+        <p class="price">₹448  <strike>₹1,499</strike> (70% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Blanket8.jpg" alt="Blanket Image">
+        <h2>BSB HOME 220 GSM Reversible Microfiber AC Blanket</h2>
+        <p>Bsb Home pinch pleat duvet cover set is made of 100% high-quality microfiber, with stronger durability, easier to wash and maintain, it's also a sweet gift for families and friends at housewarming parties, birthdays, and Christmas. Soft, Cosy and Light Weight, Colour Fade Resistant & Light Weight.</p>
+        <p class="price">₹1,224  <strike>₹2,499</strike> (51% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket9.jpg" alt="Blanket Image">
+        <h2>Winter Care Entirely Made in India A-One Single Bed Electric Blanket Saffron (90 x 150 cm)</h2>
+        <p>4-Stage heat controller.<br>
+            Low electricity consumption.
+            Washable at home in washing machine.
+            Insulated with Teflon and 100% Safe - Made in India.<br>
+            Lightweight.</p>
+        <p class="price">₹2,050 <strike>₹3,450</strike> (41% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket10.jpg" alt="Blanket Image">
+        <h2>BSB HOME All Season Miltipurpose Polar Fleece Blanket Combo Assorted Multicolour Blanket</h2>
+        <p>Super Soft Single Blanket Dimensions: 90" x 60" inches. Perfect for Single beds & coat, couches, camping, or traveling.  Stay warm all year long with these 100% polyester polar fleece blankets. ELEGANCE - Fabric is 2 side brushed which makes it extra soft.</p>
+        <p class="price">₹297 <strike>₹999</strike> (70% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket11.jpg" alt="Blanket Image">
+        <h2>COMFORT WEAVE Cotton 300 TC SOLAPUR CHADDAR Blanket (60" X 90"_ Multicolor)</h2>
+        <p>This blanket is made from cotton and is available in multicolour. The blanket is comfortable and will suitable for winters and any low temperature conditions to provide you the warmth that you will need for a good night’s sleep.</p>
+        <p class="price">₹499 <strike>₹599</strike> (17% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket12.jpg" alt="Blanket Image">
+        <h2>BSB HOME Pure Cotton 120 GSM Reversible Soft Lightweight Printed Single Bed Blanket/AC Dohar/Skin Friendly Dohar-152 x 225 cm-Light Green</h2>
+        <p>These blankets are soft and cosy, this makes it perfect for travel and it also makes the perfect gift for your family and friends.</p>
+        <p class="price">₹549 <strike>₹1,599</strike> (66% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket13.jpg" alt="Blanket Image">
+        <h2>Cloth Fusion Cotton Reversible Dohar Single Bed Size All Season Blanket Comforter (Blue Leaves, Pack of 1)</h2>
+        <p>Fiesta Dohars have same fabric edging/piping, which gives its own uniqueness for an elegant look and feels. These blankets are available in multicolor.</p>
+        <p class="price">₹799 <strike>₹1,299</strike> (38% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket14.jpg" alt="Blanket Image">
+        <h2>SB HOME Polyester Micromink Summer AC/Mild Winter/Heavy Winter Sherpa Blanket </h2>
+        <p>BSB Home Sherpa Blanket Is Made Of 100% Microfiber. You Can Take It For Sleeping, Traveling, Camping Or Having A Nap On Sofa/Couch Or Snuggling Up When Watching Tv.</p>
+        <p class="price">₹1,399 <strike>₹3,999</strike> (65% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket15.jpg" alt="Blanket Image">
+        <h2>THARUNSHA ELITE Single Blanket Single Size Solapur Cotton Chaddar / 100% Cotton Blanket</h2>
+        <p>Our blankets can also be used as bedspread ,bedsheet and have the advantage of reversibke design on both side.Colour guarantee.Please dont bleech. Wash separtely in cold water Usefull in winter and suitable for AC rooms.</p>
+        <p class="price">₹1,298 <strike>₹3,000</strike> (57% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket16.jpg" alt="Blanket Image">
+        <h2>Amazon Brand - Solimo Microfibre Reversible Single Bed Comforter/Quilt/AC Blanket|Aqua Blue & Olive Green|120 GSM</h2>
+        <p>This quilt is brightly coloured, with colours like aqua blue and olive green giving it an aesthetic look. This quilt is suitable for mild winters and air-conditioned rooms, providing warmth in a chilly environment.</p>
+        <p class="price">₹659 <strike>₹1,399</strike> (53% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket17.jpg" alt="Blanket Image">
+        <h2>VAS COLLECTIONS 220 GSM Reversible Microfiber AC Comforter</h2>
+        <p>The soft, lightweight, breathable bedding set can perfectly match your home décor. VAS COLLECTIONS pinch pleat duvet cover set is made of 100% high-quality microfiber, easier to wash and maintain, it's also a sweet gift for families and friends.</p>
+        <p class="price">₹599 <strike>₹1,999</strike> (70% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Blanket18.jpg" alt="Blanket Image">
+        <h2>Happy Hues® Glow in The Dark Blanket Unicorn-70 x 60 inch</h2>
+        <p>The glowing blanket is made of High-quality luminous fiber is woven material to absorb and store light energy, glowing in the dark, mysterious and interesting.</p>
+        <p class="price">₹1,175 <strike>₹3,499</strike> (66% off)</p>
+        <button>Add to Cart</button>
+    </div>
+
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

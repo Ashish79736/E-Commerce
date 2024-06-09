@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BedSheets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+ .search-bar {
+            width: 50%;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 14000px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            width: 300px;
+            background-color: #fff;
+            margin: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .product p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .product .price {
+            font-weight: bold;
+            font-size: 20px;
+            color: #007bff;
+        }
+        .product .price strike{
+            font-size: 15px;
+            color: red;
+        }
+        .product button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #0056b3;
+        }
+         /* Zoom effect */
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product:hover img {
+            transform: scale(1.05);
+        }
+        .kk img{
+    height:400px;
+}
+  
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <form action="search.php" method="GET">
+            <input type="text" name="query" placeholder="Search for products...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+
+  <!-- carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide kk" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- insert -->
+        <img src="Home & Furniture/Bedsheet_offer.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <!-- insert -->
+        <img src="Home & Furniture/Bedsheet_offer1.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+    
+<!--  product container-->
+<div class="container">
+    <div class="product">
+        <img src="Home & Furniture/Bedsheet1.jpg" alt="Bedsheet Image">
+        <h2>Story@Home 186 TC Cotton Bedsheet, For Double Size Bed, Multi-Color
+        </h2>
+        <p> Designed to support your body for a healthy night's rest and our bed products are designed to maximize your comfort and luxury for a perfect sleep experience. Our sheet was weaved by Cotton, it is super soft and thick yarns which enable good breathability and softness.</p>
+        <p class="price">₹799  <strike>₹1,799</strike> (56% off)
+        </p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Home & Furniture/Bedsheet2.jpg" alt="Bedsheet Image">
+        <h2>Geometric Cotton Bedsheet</h2>
+        <p>Our bed sheets is designed in such a way that it complement the color and pattern of your space giving you a warm feel at your home. Crafted with happiness, our sheet provides a soft and a comfortable feel to your skin moreover our sheet is anti allergic. The wide variety of bed sheet range beautiful colors and pattern will instantly lift up your mood.</p>
+        <p class="price">₹699  <strike>₹1,499</strike> (53% off)</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Home & Furniture/Bedsheet3.jpg" alt="Bedsheet Image">
+        <h2>Stoa Paris Satin Bedsheet for King Size Bed, 225TC Bedsheet with 2 Pillow Covers(White)</h2>
+        <p>The set includes a meticulously handcrafted flat sheet and two pillow covers, each featuring durable stitching for lasting quality. This bedsheet set is made from a cotton-rich fabric and combining comfort for a luxurious sleep experience.</p>
+        <p class="price">₹2,599  <strike>₹3,499</strike> (26% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Bedsheet4.jpg" alt="Bedsheet Image">
+        <h2>RajasthaniKart® Pure 100% Cotton Double Bed Sheet with 2 Pillow Covers</h2>
+        <p>Beautifully handicrafted jaipuri bedsheets through traditional methods . Can also be used as a wall hanging tapestry , bed spread , and couch cover, window curtain , wall art , and other home decor purposes. It gives traditional look to our home.</p>
+        <p class="price">₹399  <strike>₹1,499</strike> (73% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Bedsheet5.jpg" alt="Bedsheet Image">
+        <h2>Solimo Polycotton Wild Forest Double Bedsheet with 2 Pillow Cover, Multicolor, 95 GSM</h2>
+        <p>It is made with premium-quality polyester which makes it durable and long-lasting. The colourful bedsheet uplifts the look of your room and adds positive vibes. The bedsheet is super easy to clean and maintain, and hence, is a year-round choice</p>
+        <p class="price">₹239  <strike>₹799</strike> (70% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Bedsheet6.jpg" alt="Bedsheet Image">
+        <h2>BSB HOME 100% Microfiber bedsheet for Double Bed with 2 Pillow Covers Breathable</h2>
+        <p>Microfiber bedsheets are most comfortable and apt for Indian or tropical climates. Microfiber being a natural fiber is the best material for bed sheets. A pure Microfiber bedsheet has unmatched quality, softness and it is anti-allergic too.</p>
+        <p class="price">₹199  <strike>₹799</strike> (75% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Bedsheet7.jpg" alt="Bedsheet Image">
+        <h2>SheetKart Cotton Blend Traditional Mandala Jaipuri Printed Bedsheet for Double Bed King Size with 2 Pillow Covers - Sea Green
+</h2>
+        <p>Our products are extremely design centric, created out of the highest quality materials. Each of our product is made only from high quality cotton fabric to make sure the fabric is soft, skin-friendly and long lasting.</p>
+        <p class="price">₹499  <strike>₹999</strike> (50% off)</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="Home & Furniture/Bedsheet8.jpg" alt="Bedsheet Image">
+        <h2>Urban Space 100% Cotton Bedsheet for King Bed, Serene 200 TC Bedsheet King Size Bed Cotton with 2 Pillow Cover </h2>
+        <p> Our bedsheet for double bed is crafted from premium long-staple cotton, providing a soft and soothing touch that's perfect for sensitive skin, ensuring your comfort throughout the night.</p>
+        <p class="price">₹1,224  <strike>₹2,499</strike> (51% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet9.jpg" alt="Bedsheet Image">
+        <h2>Story@Home Forever Collection 240 TC 100% Cotton King Size Bedsheet and 2 Pillow Covers (White and Sky Blue)</h2>
+        <p>Our king size bed sheet cotton set can be easily cleaned in a washing machine, ensuring convenience and ease. Refrain from using bleach or harsh chemicals. </p>
+        <p class="price">₹1,299 <strike>₹3,999</strike> (68% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet10.jpg" alt="Bedsheet Image">
+        <h2>Amazon Brand - Solimo Hibiscus Haven Double Bedsheet with 2 Pillow Covers, 95 GSM</h2>
+        <p>It is made with premium yarns which makes it long-lasting. The texture of the bedsheet ensures you enjoy year-round comfort. Its beautiful design adds a touch of elegance to your bedroom</p>
+        <p class="price">₹239 <strike>₹599</strike> (60% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet11.jpg" alt="Bedsheet Image">
+        <h2>RD TREND Glace Cotton Printed Flat Double Bedsheet with 2 Pillow Covers | 210 Tc Supersoft Double Bed Grey Leaf</h2>
+        <p>Soft and Comfortable Luxury Bedsheets are fit for any Double set in your house. Large size to make it easy to tuck-in below the bed with Long lasting and vibrant colors along with skin friendly
+            SuperSoft cotton.</p>
+        <p class="price">₹671 <strike>₹999</strike> (33% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet12.jpg" alt="Bedsheet Image">
+        <h2>Zinnia Super Soft Microfibre Solid bedsheet with 1 Pillow Cover</h2>
+        <p>Our zinnia solid bedsheet and pillow cover are made of microfibre fabric which is known for its exceptional softness, providing a comfortable and cozy sleep. Our super soft fabric creates a smooth texture that feels gentle against the skin.</p>
+        <p class="price">₹299 <strike>₹699</strike> (57% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet13.jpg" alt="Bedsheet Image">
+        <h2>Naksh 100% Cotton Plain 300 TC Bedsheets for King Size Bed, Aqua Green</h2>
+        <p>Besides keeping you warm and comfortable, your pure cotton bedsheet double bed can take your interior game to a whole new level of WOW with a wide colour range of blossoming bed sheets for double bed from Naksh.</p>
+        <p class="price">₹1,755 <strike>₹3,499</strike> (50% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet14.jpg" alt="Bedsheet Image">
+        <h2>LORETO 100% Cotton Bedsheet for Double Bed with Two Pillow Covers - Multi Colour, Polka Dots, Soft & Breathable Fabric</h2>
+        <p>The bedsheet set is made with a sophisticated design, carefully crafted to add exquisite class to your bedroom and enhance décor. It’s the perfect fit with easy Care.</p>
+        <p class="price">₹699 <strike>₹1,999</strike> (65% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet15.jpg" alt="Bedsheet Image">
+        <h2>RajasthaniKart® Pure 100% Cotton Double Bed Sheet with 2 Pillow Covers (Bedsheet for Double Bed Cotton, Green More Jaipuri, King Size,731)</h2>
+        <p>Beautifully handicrafted jaipuri bedsheets through traditional methods . Can also be used as a wall hanging tapestry , bed spread , and couch cover, window curtain , wall art , and other home decor purposes</p>
+        <p class="price">₹419 <strike>₹1,499</strike> (72% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet16.jpg" alt="Bedsheet Image">
+        <h2>HUESLAND by Ahmedabad Cotton 144 TC Cotton Single Bedsheet with 1 Pillow Cover - White, Blue</h2>
+        <p>Our products are extremely design centric, created out of the highest quality materials. Each of our product is made only from high quality cotton fabric to make sure the fabric is soft, skin-friendly and long lasting.</p>
+        <p class="price">₹448 <strike>₹699</strike> (36% off)</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet17.jpg" alt="Bedsheet Image">
+        <h2>Spaces Hygro Solid Turquoise 1 Large Bedsheet with 4 Pillow Covers
+        </h2>
+        <p>1 Large Bedsheet With 4 Pillow Covers<br>
+            Thread Count : 180<br>
+            Material : Cotton<br>
+            Colour : Turquoise<br>
+            Pattern	: Abstract</p>
+        <p class="price">₹4,999</p>
+        <button>Add to Cart</button>
+    </div><div class="product">
+        <img src="Home & Furniture/Bedsheet18.jpg" alt="Bedsheet Image">
+        <h2>Home Ecstasy 100% Cotton Double Bedsheets with 2 Pillow Covers Cotton, 140tc Ethnic Mustard Bedsheets for Double Bed Cotton (7.3ft X 7.8ft)</h2>
+        <p>100% cotton bedsheets for double bed, geometric pattern bedsheets cotton double bed set.</p>
+        <p class="price">₹999 <strike>₹1,999</strike> (50% off)</p>
+        <button>Add to Cart</button>
+    </div>
+
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
